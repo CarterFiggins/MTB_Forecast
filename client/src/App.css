@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+}
+
+.weather-container {
+}
+
+.weather-list {
+  padding: 0 1rem 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.weather-item {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid white;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+body {
+  background-color: #23242a;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

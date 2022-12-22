@@ -1,0 +1,29 @@
+{
+  "name": "mtbForcast",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "cd ./app; npx tsc",
+    "start": "node app/dist/index.js",
+    "dev": "cd ./app; concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "startClient": "cd ./client; yarn start"
+  },
+  "dependencies": {
+    "@types/jest": "^29.2.4",
+    "@types/lodash": "^4.14.191",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "axios": "^1.2.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.11.15",
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.4"
+  }
+}
