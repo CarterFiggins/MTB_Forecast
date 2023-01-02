@@ -7,10 +7,6 @@ dotenv.config();
 const app: Express = express();
 const port = process.env.PORT;
 
-app.get("/", async (req: Request, res: Response) => {
-  res.send("HOME PAGE");
-});
-
 app.get("/weather", async (req: Request, res: Response) => {
   try {
     const ipResults = await axios.get("https://api.ipify.org/");

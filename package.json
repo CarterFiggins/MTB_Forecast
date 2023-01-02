@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "cd ./app; npx tsc",
-    "start": "node app/dist/index.js",
-    "dev": "cd ./app; concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
     "startClient": "cd ./client; yarn start"
   },
   "dependencies": {

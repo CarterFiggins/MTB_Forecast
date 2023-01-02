@@ -27,8 +27,10 @@ export function Weather({ city, list }: Report) {
       <h1>
         {city.name} {city.country}
       </h1>
-      <h2>Sunrise: {sunrise}</h2>
-      <h2>Sunset: {sunset}</h2>
+      <div>
+        <h2>Sunrise: {sunrise}</h2>
+        <h2>Sunset: {sunset}</h2>
+      </div>
       <WeatherTable list={list} />
     </div>
   );

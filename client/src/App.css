@@ -5,6 +5,29 @@
 .weather-container {
 }
 
+.info-box {
+  border: white solid 1px;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+.warning-green {
+  background-color: #2a6219;
+  border-color: #2a6219;
+}
+.warning-yellow {
+  background-color: #c7ca25;
+  border-color: #c7ca25;
+}
+.warning-orange {
+  background-color: #ad7b1e;
+  border-color: #ad7b1e;
+}
+.warning-red {
+  background-color: #ad2f1e;
+  border-color: #ad2f1e;
+}
+
 .weather-list {
   padding: 0 1rem 1rem 1rem;
   display: flex;
@@ -16,6 +39,7 @@
   padding: 1rem;
   margin: 1rem;
   border: 1px solid white;
+  border-radius: 5px;
   width: 15rem;
   display: flex;
   justify-content: center;
