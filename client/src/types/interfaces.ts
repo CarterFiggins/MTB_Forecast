@@ -1,37 +1,37 @@
-export interface Report {
-  city: City;
+export interface ReportInterface {
+  city: CityInterface;
   cnt: number;
   cod: string;
-  list: Array<ReportInfo>;
+  list: Array<ReportInfoInterface>;
   message: number;
 }
 
-export interface ReportInfo {
+export interface ReportInfoInterface {
   clouds: {
     all: number;
   };
   dt: number;
   dt_txt: string;
-  main: Main;
+  main: MainInterface;
   pop: number;
   sys: {
     pod: string;
   };
   visibility: number;
-  weather: Array<Weather>;
+  weather: Array<WeatherInterface>;
   rain?: { "3h": number };
   snow?: { "3h": number };
-  wind: Wind;
+  wind: WindInterface;
 }
 
-export interface Weather {
+export interface WeatherInterface {
   id: number;
   main: string;
   description: string;
   icon: string;
 }
 
-export interface Main {
+export interface MainInterface {
   feels_like: number;
   grnd_level: number;
   humidity: number;
@@ -43,19 +43,19 @@ export interface Main {
   temp_min: number;
 }
 
-export interface Wind {
+export interface WindInterface {
   speed: number;
   deg: number;
   gust: number;
 }
 
-export interface Coordinates {
+export interface CoordinatesInterface {
   lat: number;
   lon: number;
 }
 
-export interface City {
-  coord: Coordinates;
+export interface CityInterface {
+  coord: CoordinatesInterface;
   country: string;
   id: number;
   name: string;

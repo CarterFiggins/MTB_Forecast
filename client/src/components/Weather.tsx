@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { Report } from "../types/interfaces";
+import { ReportInterface } from "../types/interfaces";
 import WeatherTable from "./WeatherTable";
 
 export default function LoadWeather() {
-  const [data, setData] = useState<Report | null>(null);
+  const [data, setData] = useState<ReportInterface | null>(null);
 
   useEffect(() => {
     fetch("/weather")
@@ -18,7 +18,7 @@ export default function LoadWeather() {
   );
 }
 
-export function Weather({ city, list }: Report) {
+export function Weather({ city, list }: ReportInterface) {
   const sunrise = new Date(city.sunrise * 1000).toLocaleTimeString("en-US");
   const sunset = new Date(city.sunset * 1000).toLocaleTimeString("en-US");
   return (

@@ -9,10 +9,8 @@ const port = process.env.PORT;
 
 app.get("/weather", async (req: Request, res: Response) => {
   try {
-    const ipResults = await axios.get("https://api.ipify.org/");
-    const ip = ipResults.data;
-    const locationResults = await axios.get(`http://ip-api.com/json/${ip}`);
-    const { lat, lon } = locationResults.data;
+    const lat = 38.5733;
+    const lon = -109.5498;
     const weatherResults = await axios.get(
       `https://api.openweathermap.org/data/2.5/forecast?units=imperial&lat=${lat}&lon=${lon}&appid=${process.env.WEATHER_KEY}`
     );
